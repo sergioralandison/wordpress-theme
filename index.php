@@ -1,5 +1,5 @@
 <?php get_header() ?>
 
-Hello world !
+Ici, le contenu
 
 <?php get_footer() ?>
