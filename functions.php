@@ -13,6 +13,18 @@
     wp_enqueue_script('bootstrap');
   }
 
-  add_action('after_setup_theme', 'sg_theme_supports');
+  function sg_document_title_parts($title) {
+    unset($title['tagline']);
+    return $title;
+  }
+
+  function register_my_menu() {
+    register_nav_menu('header-menu',__( 'Header Menu' ));
+  }
+
+  add_action( 'init', 'register_my_menu' );
+  add_action('after_setup_theme', 'sg_supports');
   add_action('wp_enqueue_scripts', 'sg_register_assets');
+  add_filter('document_title_parts', 'sg_document_title_parts');
+  add_theme_support('post-thumbnails');
 ?>
