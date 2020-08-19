@@ -1,5 +1,5 @@
 <?php get_header() ?>
 
-Ici, le contenu
+Le contenu.
 
 <?php get_footer() ?>
