@@ -1,5 +1,5 @@
 <?php
-  function sg_theme_supports () {
+  function sg_supports () {
     add_theme_support('title-tag');
   }
 
