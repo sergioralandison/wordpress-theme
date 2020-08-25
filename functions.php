@@ -14,7 +14,12 @@
     wp_enqueue_script('bootstrap');
   }
 
+  function sg_title_separator () {
+    return '|';
+  }
+
   add_action('after_setup_theme', 'sg_theme_supports');
   add_action('wp_enqueue_scripts', 'sg_register_assets');
+  add_filter('document_title_separator', 'sg_title_separator');
 
 ?>
