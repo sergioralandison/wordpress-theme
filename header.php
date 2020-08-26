@@ -6,10 +6,6 @@
   <?php wp_head() ?>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
-    <a class="navbar-brand" href="#"><?php bloginfo('name')?></a>
+<body <?php body_class(); ?>>
 
-  </nav>
-
-  <div class="container">
+  <?php wp_body_open(); ?>
