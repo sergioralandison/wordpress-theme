@@ -1,7 +1,7 @@
 <?php
 
   function sg_theme_supports () {
-    add_theme_support( 'title-tag');
+    add_theme_support('title-tag');
   }
 
   function sg_register_assets () {
@@ -17,6 +17,8 @@
   function sg_title_separator () {
     return '|';
   }
+
+  add_theme_support('post-thumbnails');
 
   add_action('after_setup_theme', 'sg_theme_supports');
   add_action('wp_enqueue_scripts', 'sg_register_assets');

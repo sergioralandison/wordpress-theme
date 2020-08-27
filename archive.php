@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<h1>ARCHIVE</h1>
 
-  <h1>Le blog Capitaine WP</h1>
+  <h2>Le blog Capitaine WP</h2>
 
 	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
