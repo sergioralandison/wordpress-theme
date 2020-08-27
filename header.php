@@ -14,4 +14,6 @@
    <a href="<?php echo home_url( '/' ); ?>">
      <img src="<?php echo get_template_directory_uri(); ?>/images/www.png" alt="Logo"> <!--donne l'adresse absolue (complète)-->
    </a>
+   <?php echo wp_nav_menu( array( 'theme_location' => 'header-menu' ) ) ?>
+
  </header>
