@@ -1,5 +1,11 @@
-<?php get_header() ?> <!--appel le fichier d'en-tête-->
+<?php get_header(); ?>
 
-<h1>Hello world</h1>
+	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?> <!--contrôle s'il y a bien quelque chose à afficher-->
 
-<?php get_footer() ?> <!--appel le fichier d'en-tête-->
+    	<h1><?php the_title(); ?></h1> <!--affiche le titre-->
+
+    	<?php the_content(); ?> <!--affiche le contenu-->
+
+	<?php endwhile; endif; ?>
+
+<?php get_footer(); ?>
