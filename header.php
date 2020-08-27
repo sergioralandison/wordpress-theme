@@ -8,10 +8,10 @@
 
 <body <?php body_class(); ?>> <!--permet d'obtenir des noms de classe CSS en fonction de la page visitée-->
 
-  <?php wp_body_open(); ?>
+  <?php wp_body_open(); ?> <!--permet à des extensions d'écrire du code au début du body-->
 
   <header class="header">
    <a href="<?php echo home_url( '/' ); ?>">
-     <img src="<?php echo get_template_directory_uri(); ?>/images/www.png" alt="Logo"> <!--donne l'adresse absolue-->
+     <img src="<?php echo get_template_directory_uri(); ?>/images/www.png" alt="Logo"> <!--donne l'adresse absolue (complète)-->
    </a>
  </header>

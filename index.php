@@ -1,3 +1,5 @@
-<?php get_header() ?>
+<?php get_header() ?> <!--appel le fichier d'en-tête-->
 
-<?php get_footer() ?>
+<h1>Hello world</h1>
+
+<?php get_footer() ?> <!--appel le fichier d'en-tête-->
