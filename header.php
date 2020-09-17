@@ -3,7 +3,7 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>"> <!--défini l'encodage du site, par défaut c'est UTF-8-->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-  <?php wp_head() ?> <!--déclare le chargement des scripts et des styles-->
+  <?php wp_head() ?> <!--récupère les scripts et les styles-->
 </head>
 
 <body <?php body_class(); ?>> <!--permet d'obtenir des noms de classe CSS en fonction de la page visitée-->
@@ -11,9 +11,8 @@
   <?php wp_body_open(); ?> <!--permet à des extensions d'écrire du code au début du body-->
 
   <header class="header">
-   <a href="<?php echo home_url( '/' ); ?>">
-     <img src="<?php echo get_template_directory_uri(); ?>/images/www.png" alt="Logo"> <!--donne l'adresse absolue (complète)-->
-   </a>
-   <?php echo wp_nav_menu( array( 'theme_location' => 'header-menu' ) ) ?>
-
+    <a href="<?php echo home_url( '/' ); ?>"> <!--ramène à l'accueil du site grâce à la fonction home_url()-->
+      <img src="<?php echo get_template_directory_uri(); ?>/images/www.png" alt="Logo"> <!--donne l'adresse absolue (complète)-->
+    </a>
+    <?php wp_nav_menu(['theme_location' => 'header_menu', 'container' => false, 'menu_class' =>'navbar-nav mr-auto']) ?>
  </header>
