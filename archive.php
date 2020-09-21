@@ -1,4 +1,7 @@
+<!--cette page liste les derniers articles-->
+
 <?php get_header(); ?>
+
 	<h1>ARCHIVE</h1>
 
   <h2>Le blog Capitaine WP</h2>
